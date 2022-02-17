@@ -1,0 +1,50 @@
+html {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+}
+
+body {
+    padding: 50px;
+    color: #232323;
+    background-color: #f9f9f9;
+}
+
+.item {
+    border: solid 5px #345090;
+    background-color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+.container {
+    padding: 5px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-auto-rows: 200px 50px 300px 100px;
+    grid-template-areas:
+        "banner banner banner banner"
+        "cabecalho cabecalho cabecalho cabecalho "
+        "principal principal principal lateral "
+        "rodape rodape rodape rodape "
+    ;
+}
+
+.banner {
+    grid-area: banner;
+}
+
+.cabecalho {
+    grid-area: cabecalho;
+}
+
+.principal {
+    grid-area: principal;
+}
+
+.lateral {
+    grid-area: lateral;
+}
+
+.rodape {
+    grid-area: rodape;
+}
