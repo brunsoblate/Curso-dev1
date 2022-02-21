@@ -1,0 +1,62 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+body {
+    margin-top: 1%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 1%;
+    background-color: rgb(223, 223, 43);
+}
+
+.item {
+    border: solid 1px #345090;
+    background-color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+.container {
+    padding: 5px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-auto-rows: 200px 50px 300px 100px;
+    background-color: #1f4774;
+    gap: 5px;
+    grid-template-areas:
+        "banner banner banner banner"
+        "cabecalho cabecalho cabecalho cabecalho "
+        "principal principal principal lateral "
+        "rodape rodape rodape rodape "
+    ;
+}
+
+.container *{
+    border: solid 1px ;
+    border-radius: 9px;
+    background-color:white;
+    padding-top:15px;
+    text-align: center;
+}
+
+.banner {
+    grid-area: banner;
+}
+
+.cabecalho {
+    grid-area: cabecalho;  
+}
+
+.principal {
+    grid-area: principal;
+}
+
+.lateral {
+    grid-area: lateral;
+}
+
+.rodape {
+    grid-area: rodape;
+}
